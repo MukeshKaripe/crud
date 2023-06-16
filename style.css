@@ -1,0 +1,85 @@
+#form{
+    display: flex;
+flex-wrap: wrap;
+    padding: 1rem;
+    gap: 10px;
+}
+#form .input-data{
+    width: 200px;
+    height: 44px;
+    padding: 12px 26px;
+    box-shadow: none;
+border-radius: 4px;
+}
+fieldset{
+    margin: 40px 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(168, 173, 248);
+    font-family: sans-serif;
+}
+
+.data-input-forms{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+td{
+    padding: 8px 17px;
+    font-size: 16px;
+
+}
+.cols{
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgb(112, 145, 112);
+}
+tr{
+    background-color: aqua;
+    text-align: center;
+}
+input{
+    font-size: 16px;
+    padding: 5px 10px;
+}
+/* #msg{
+    color: red;
+    font-size: 22px;
+} */
+.main-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    
+}
+.input-button-main-content {
+    width: 100%;
+    display: flex;
+    gap: 10%;
+}
+.input-button-main-content input{
+    height: 44px;
+    padding: 12px 26px;
+    box-shadow: none;
+border-radius: 4px;
+background-image: linear-gradient(99deg, rgba(255, 255, 255, 0) 30%, #ffffff 100%), radial-gradient(circle at 50% 50%, #ffffff 0, rgba(255, 255, 255, 0) 70%);
+    color: #000000 !important;
+    background-size: 100% 100%,90% 100%;
+    background-position: 0 0, -1000% 0;
+    background-repeat: no-repeat;
+    transition: all 0.6s ease-out;
+    border: none;
+    cursor: pointer;
+}
+
+.input-button-main-content input:hover{
+    background-position: 0 0,150% 0;
+
+    background-color: #797676 !important;
+    border-color: #797676 !important;
+}
+
+

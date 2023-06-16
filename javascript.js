@@ -166,3 +166,50 @@ function remove(removepara){
 
 
 
+// IMPLEMENTING JSON DATA (ARRAYOBJECT)]
+let identity = '';
+// localStorage.clear();
+function submitsecond(){
+  document.getElementById('message').innerHTML=" ";
+let namestand = document.getElementById('namesecond').value;
+if(namestand == ''){
+  document.getElementById('message').innerHTML='please enter your name';
+
+
+
+
+}
+else{
+  if(identity==''){
+let arr=JSON.parse(localStorage.getItem('crud'))
+if(arr==null){
+  let dataa=[namestand];
+localStorage.setItem('crud',JSON.stringify(dataa));
+
+}
+else{
+arr.push(namestand);
+localStorage.setItem('crud',JSON.stringify(arr));
+
+}
+  }
+  else{
+
+  }
+  
+}
+// document.getElementById('namesecond').value='';
+document.getElementById('formsecondjson').reset();
+}
+function selectdata(){
+
+}
+function deletedata(){
+
+}
+function loaddata(){
+
+}
+function editdata(){
+
+}
